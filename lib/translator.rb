@@ -27,4 +27,9 @@ end
 
 def get_english_meaning(file_path, japanese_emoticon)
 comparison_hash = load_library(file_path)
+comparison_hash[:get_meaning].each do |japanese, meaning|
+  if japanese == japanese_emoticon 
+    return meaning
+    end
+  end
 end
