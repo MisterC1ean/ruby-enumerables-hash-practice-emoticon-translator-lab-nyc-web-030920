@@ -32,4 +32,5 @@ comparison_hash[:get_meaning].each do |japanese, meaning|
     return meaning
     end
   end
+  return "Sorry, that emoticon was not found"
 end
